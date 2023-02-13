@@ -1,0 +1,56 @@
+.pizza {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/image/categoryPizza.jpg) no-repeat center center/cover;
+  height: 200px;
+}
+.burger {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/image/categoryBurger.jpg) no-repeat center center/cover;
+  height: 200px;
+}
+.sandwich {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/image/categorySandwich.jpg) no-repeat center center/cover;
+  height: 200px;
+}
+.pasta {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/image/categoryPasta.jpg) no-repeat center center/cover;
+  height: 200px;
+}
+.fried {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/image/categoryFried.jpg) no-repeat center center/cover;
+  height: 200px;
+}
+.salad {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/image/categorySalad.jpg) no-repeat center center/cover;
+  height: 200px;
+}
+.steak {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/image/categorySteak.jpg) no-repeat center center/cover;
+  height: 200px;
+}
+.soup {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/image/categorySoup.jpg) no-repeat center center/cover;
+  height: 200px;
+}
+.category {
+    border-radius: 10px;
+}
+.category h3{
+    color: var(--gray--100);
+}
+@media only screen and (max-width: 767px) {
+  .category {
+    width: 48% !important;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .category {
+    width: 23% !important;
+  }
+}

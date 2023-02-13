@@ -1,0 +1,26 @@
+.title{
+    color: var(--primary--main);
+}
+.text{
+    color: var(--gray--800);
+}
+
+.arrow::after{
+    margin-left: 0!important;
+    color: var(--gray--100)!important;
+    padding: 0 1rem;
+}
+.header button[aria-expanded="true"]{
+    background-color: var(--primary--light)!important;
+    color: var(--gray--100)!important;
+}
+.header button:focus {
+    box-shadow:none!important;
+    background-color: var(--primary--light)!important;
+}
+.line{
+    width: 95%;
+    height: 1px;
+    background-color: var(--gray--500);
+    margin: 8px auto;
+}

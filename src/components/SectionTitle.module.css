@@ -1,0 +1,7 @@
+.container{
+    background: var(--gradient--section);
+    margin-top: 140px!important;
+}
+.title{
+    color: var(--primary--main);
+}

@@ -1,0 +1,50 @@
+.discount-row {
+  background: var(--gradient--discount);
+  border-radius: 50px 50px 150px 50px;
+}
+.title {
+  color: var(--gray--100);
+  border-bottom: 3px solid var(--gray--100);
+}
+.text {
+  color: var(--gray--100);
+}
+@media only screen and (max-width: 576px) {
+  .title {
+    font-size: 20px;
+  }
+  .text {
+    font-size: var(--caption);
+  }
+}
+.discount-left {
+  position: relative;
+}
+.icon {
+  color: var(--gray--100);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 2%;
+}
+.circle {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(242, 242, 242, 0.18) 0%,
+    rgba(241, 238, 238, 0.06) 100%
+  );
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+}
+.circle1 {
+  position: absolute;
+  bottom: 0;
+  left: 95%;
+}
+.circle2 {
+  position: absolute;
+  top: 0;
+  left: 135%;
+}

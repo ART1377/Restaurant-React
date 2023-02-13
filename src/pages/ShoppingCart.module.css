@@ -1,0 +1,119 @@
+.card {
+  max-height: 200px !important;
+  box-shadow: 2px 2px 6px var(--primary--light);
+}
+.card-row {
+  max-height: 200px !important;
+}
+.card-row .col-img,
+.card-row .col-content {
+  max-height: 200px !important;
+}
+.card-row .col-img img,
+.card-row .col-content div:nth-child(1) {
+  max-height: 200px !important;
+  object-fit: contain;
+}
+.header {
+  border-bottom: 2px solid var(--primary--main);
+  margin-bottom: 16px;
+}
+.header h4 {
+  color: var(--gray--900);
+}
+.header a {
+  color: var(--primary--main) !important;
+}
+.header svg {
+  font-size: 20px;
+  margin-right: 4px;
+}
+.image {
+  padding: 8px;
+  /* border-left: 2px solid var(--primary--main); */
+}
+.col-img {
+  position: relative;
+}
+.col-img::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  left: 0px;
+  top: 20%;
+  height: 60%;
+  margin: auto !important;
+  background: var(--primary--main);
+}
+.text {
+  font-size: var(--body-2);
+}
+.price span {
+  color: var(--primary--main);
+  font-weight: bold;
+}
+.price small {
+  text-decoration: line-through;
+}
+.card-row {
+  position: relative;
+}
+.trash {
+  color: var(--gray--100);
+  background-color: var(--gray--900);
+  position: absolute;
+  width: 32px !important;
+  height: 32px !important;
+  left: 1%;
+  top: 2%;
+  font-size: 24px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.operation {
+  position: absolute;
+  left: 3%;
+  bottom: -11%;
+  width: 120px !important;
+  background-color: var(--gray--100);
+  box-shadow: 2px 2px 6px var(--primary--main);
+}
+.operation * {
+  font-size: 24px;
+}
+.operation div {
+  width: 32px !important;
+  height: 32px !important;
+}
+.right,
+.left {
+  background-color: var(--gray--100);
+  border-radius: 24px;
+}
+.left *:not(button) {
+  color: var(--gray--700);
+}
+.head {
+  color: var(--gray--100) !important;
+  background-color: var(--primary--light);
+}
+.left h4:nth-last-child(1) {
+  color: var(--primary--main);
+}
+.left div:nth-child(3) h5:nth-child(2) {
+  color: var(--succeed);
+}
+.left {
+  max-width: 400px !important;
+  max-height: 550px!important;
+}
+.empty h3{
+  color: var(--primary--main);
+  padding-top: 1rem;
+}
+.empty svg{
+  color: var(--primary--main);
+  font-size: 120px;
+}

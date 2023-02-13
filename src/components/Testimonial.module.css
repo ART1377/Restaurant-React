@@ -1,0 +1,90 @@
+.card {
+  background-color: var(--gray--100);
+  max-width: 500px;
+}
+.shape {
+  padding: 8px 24px;
+  width: 100px;
+  height: 260px;
+  background: var(--primary--light);
+  border: 1.09504px solid var(--primary--light);
+  border-radius: 5px 5px 50px 5px;
+}
+.right {
+  position: relative;
+}
+.image {
+  width: 150px;
+  height: 130px;
+  transition: var(--transition);
+}
+.card:hover .image {
+  transform: scale(1.03);
+}
+.name {
+  color: var(--gray--900);
+}
+.stars svg {
+  color: var(--primary--main);
+}
+.text p {
+  color: var(--gray--800);
+}
+.text svg {
+  color: var(--primary--main);
+}
+.circle1 {
+  position: absolute;
+  width: 116px !important;
+  height: 104px !important;
+  right: 0%;
+  top: -14%;
+  background: radial-gradient(
+    57.23% 50% at 50% 50%,
+    rgba(255, 51, 51, 0.241) 0%,
+    rgba(255, 128, 128, 0.05) 100%
+  );
+  z-index: 3;
+}
+.circle2 {
+  position: absolute;
+  width: 116px !important;
+  height: 104px !important;
+  left: 18%;
+  bottom: -16%;
+  background: radial-gradient(
+    57.23% 50% at 50% 50%,
+    rgba(255, 51, 51, 0.348) 0%,
+    rgba(255, 128, 128, 0.05) 100%
+  );
+  z-index: 3;
+}
+.circle3 {
+  position: absolute;
+  width: 116px !important;
+  height: 104px !important;
+  left: 0%;
+  top: -16%;
+  background: radial-gradient(
+    57.23% 50% at 50% 50%,
+    rgba(255, 51, 51, 0.297) 0%,
+    rgba(255, 128, 128, 0.05) 100%
+  );
+  z-index: 3;
+}
+@media only screen and (max-width: 420px) {
+  .shape {
+    width: 60px;
+    height: 180px;
+  }
+  .image {
+    width: 110px;
+    height: 100px;
+  }
+  .name {
+    font-size: var(--body-1);
+  }
+  .text p {
+    font-size: var(--body-2);
+  }
+}

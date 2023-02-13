@@ -1,0 +1,28 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: 50%;
+  padding: 24px;
+  color: var(--primary--main) !important;
+  fill: var(--primary--main) !important;
+  stroke: var(--primary--main) !important;
+  border: 2px solid var(--primary--main);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem;
+}

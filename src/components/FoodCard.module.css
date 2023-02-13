@@ -1,0 +1,70 @@
+.logo-container {
+  height: 48px;
+  width: 48px;
+  border-radius: 5px 5px 50px 10px;
+  background-color: var(--primary--main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 8px;
+}
+.logo-container svg {
+  height: 24px;
+  width: 24px;
+  color: var(--gray--100);
+}
+
+.card {
+  width: 216px;
+  filter: drop-shadow(4px 8px 9px rgba(0, 0, 0, 0.25));
+  border-radius: 60% 60% 50px 10px !important;
+  transition: var(--transition);
+}
+.logo-container svg {
+  transition: var(--transition);
+}
+.card:hover .logo-container svg {
+  transform: scale(1.1);
+}
+
+.card:hover {
+  filter: none;
+}
+.card-img {
+  width: 216px !important;
+  height: 216px;
+  border-radius: 100%;
+}
+.text {
+  font-size: var(--body-3);
+  color: var(--gray--800);
+}
+.heart {
+  color: var(--primary--main);
+}
+
+.price,
+.price-text {
+  color: var(--primary--main);
+}
+
+.discount {
+  font-size: var(--body-3);
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 160px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .text {
+    font-size: var(--caption);
+  }
+  .card-img {
+    width: 160px !important;
+    height: 160px !important;
+  }
+}

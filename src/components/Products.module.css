@@ -1,0 +1,48 @@
+.container {
+  background: rgba(255, 115, 115, 0.15);
+}
+.sort-container {
+  background-color: var(--primary--main);
+  min-height: 64px;
+  width: 80% !important;
+  border-radius: 8px 8px 56px 8px;
+}
+.sort {
+  color: var(--gray--900);
+}
+.cheap,
+.expensive {
+  color: var(--gray--100);
+  cursor: pointer;
+}
+@media only screen and (max-width: 576px) {
+  .sort-container {
+    width: 95% !important;
+  }
+  .sort {
+    font-size: var(--body-2);
+  }
+  .cheap,
+  .expensive {
+    font-size: var(--body-1);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .right {
+    width: 100% !important;
+    padding-bottom: 4rem;
+  }
+  .left {
+    width: 100% !important;
+  }
+  .right .btn-group div {
+    width: 32% !important;
+  }
+  .card-container .card{
+    display: flex;
+    justify-content: center;
+  }
+}
+.active{
+border-bottom: 2px solid var(--gray--100);
+font-weight: bold;padding-bottom: 4px;}

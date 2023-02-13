@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&family=El+Messiri:wght@400;500;600;700&family=Mochiy+Pop+One&family=Poppins:wght@300;500;600;700;800&display=swap');
+
+:root {
+  /* Color styles */
+  --error: rgba(217, 0, 0, 1);
+  --succeed: rgba(0, 200, 8, 1);
+  --primary--main: rgba(255, 51, 51, 1);
+  --primary--dark: rgba(204, 20, 20, 1);
+  --primary--light: rgba(255, 115, 115, 1);
+  --secondary--main: rgba(255, 198, 45, 1);
+  --secondary--dark: rgba(204, 158, 36, 1);
+  --secondary--light: rgba(255, 217, 115, 1);
+  --tertiary--main: rgba(45, 207, 255, 1);
+  --tertiary--dark: rgba(36, 166, 204, 1);
+  --tertiary--light: rgba(138, 228, 255, 1);
+  --gray--900: rgba(26, 24, 23, 1);
+  --gray--800: rgba(77, 71, 69, 1);
+  --gray--700: rgba(102, 94, 92, 1);
+  --gray--600: rgba(128, 118, 115, 1);
+  --gray--500: rgba(153, 141, 138, 1);
+  --gray--400: rgba(178, 165, 161, 1);
+  --gray--300: rgba(204, 188, 184, 1);
+  --gray--200: rgba(237, 230, 228, 1);
+  --gray--100: rgba(255, 255, 255, 1);
+
+  --gradient--navbar: linear-gradient(
+    106.19deg,
+    #a80000 2.89%,
+    #ec0000 104.63%
+  );
+  --gradient--section: radial-gradient(
+    57.23% 50% at 50% 50%,
+    rgba(255, 146, 146, 0.44) 0%,
+    rgba(255, 166, 166, 0.04) 100%
+  );
+  --gradient--discount: linear-gradient(
+    106.19deg,
+    #ff3333 2.89%,
+    rgba(255, 125, 125, 0.67) 104.63%
+  );
+
+  /* Text-size styles */
+  --button--text--medium: 14px;
+  --button--text--large: 15px;
+  --button--text--small: 13px;
+  --subtitle-1: 16px;
+  --subtitle-2: 14px;
+  --body-1: 16px;
+  --body-2: 14px;
+  --body-3: 12px;
+  --caption: 10px;
+  --overline: 12px;
+
+  /* Transition */
+  --transition: 0.3s ease-in-out;
+
+  /* Effect styles */
+  --neumorphism-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    1px 1px 2px rgba(0, 0, 0, 0.25), -2px -2px 2px rgba(255, 255, 255, 0.05),
+    -6px -6px 8px rgba(255, 255, 255, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'El Messiri';
+}
+a{
+  cursor: pointer!important;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: var(--gray--200)!important;
+  position: relative!important;
+/*   min-height: 125vh!important; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* ********* navbar start ********* */
+.navbar {
+  background-color: var(--gray--200) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.offcanvas.show {
+  background: var(--gradient--navbar);
+}
+.offcanvas.show .nav-link {
+  color: var(--gray--100) !important;
+}
+.nav-link {
+  position: relative;
+}
+.offcanvas .nav-link::after {
+  content: '';
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary--main);
+  transition: var(--transition);
+}
+.offcanvas .nav-link {
+transition: var(--transition);}
+.offcanvas .nav-link:hover {
+ padding-right: 8px;
+}
+.offcanvas:not(.show) .nav-link:hover::after {
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+.offcanvas.show .nav-link svg {
+  color: var(--gray--100) !important;
+}
+.close-offcanvas {
+  font-size: 2rem;
+  color: var(--gray--100);
+  cursor: pointer;
+}
+.line {
+  background-color: var(--gray--100);
+  height: 4px;
+  width: 80%;
+}
+.activeNav {
+  color: var(--primary--main) !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler {
+  box-shadow: 0 !important;
+  color: transparent;
+  border: 0 !important;
+}
+.navbar-toggler span {
+  padding: 1.3rem;
+  border-radius: 0.4rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* ********* navbar end ********* */

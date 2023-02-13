@@ -1,0 +1,91 @@
+.form-container input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--gray--900) !important;
+}
+
+.form-container input:not(.check):focus {
+  outline: none !important;
+  border: none !important;
+  border-bottom: 2px solid var(--gray--900) !important;
+  box-shadow: none !important;
+}
+
+.form-container .check {
+  border: 1px solid var(--gray--900) !important;
+}
+.form-container .check:checked {
+  background-color: var(--primary--main) !important;
+  border: 1px solid var(--gray--900) !important;
+}
+.form-container h3 {
+  color: var(--primary--main);
+  margin-bottom: 3rem;
+}
+.form-container {
+  background: rgba(255, 255, 255, 0.27);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -20px -20px 60px #ffffff,
+    inset 20px 20px 60px rgba(156, 156, 156, 0.25);
+  border-radius: 30px;
+}
+.errorField label {
+  color: var(--error);
+}
+.errorField small {
+  color: var(--error);
+  font-size: var(--body-2);
+}
+.errorField input {
+  background-color: rgba(217, 0, 0, 0.483) !important;
+  border-bottom: 2px solid var(--error);
+}
+
+.last-row a {
+  color: var(--primary--main)!important;
+  margin-right: 8px;
+}
+.row {
+  position: relative;
+}
+.circle1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: 10%;
+  bottom: 10%;
+  background: radial-gradient(
+    111.87% 65.4% at 53.7% 53.97%,
+    rgba(255, 93, 45, 0.35) 0%,
+    rgba(255, 134, 98, 0.08) 100%
+  );
+  border-radius: 100%;
+  filter: blur(12px);
+  z-index: -1;
+}
+.circle2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 10%;
+  top: 10%;
+  background: radial-gradient(
+    111.87% 65.4% at 53.7% 53.97%,
+    rgba(255, 93, 45, 0.35) 0%,
+    rgba(255, 134, 98, 0.08) 100%
+  );
+  border-radius: 100%;
+  filter: blur(12px);
+  z-index: -1;
+}
+
+.circle3{  position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 20%;
+    bottom: 0;
+    background: transparent;
+    border-radius: 100%;
+border: 1rem solid var(--primary--main);
+opacity: .5;
+z-index: -1;
+}

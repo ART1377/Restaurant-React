@@ -14,6 +14,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import Button from './Button';
 
 const Navbar = () => {
+
   return (
     <>
       <nav className="navbar navbar-expand-lg sticky-top">
@@ -56,6 +57,7 @@ const Navbar = () => {
                       isActive ? 'activeNav nav-link' : 'nav-link'
                     }
                     to="/homePage"
+                    
                   >
                     <FaHome className="me-2" />
                     صفحه اصلی

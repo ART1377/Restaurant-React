@@ -1,7 +1,7 @@
 import React from "react";
-import SectionTitle from './SectionTitle';
-import Testimonial from './Testimonial';
-import { users } from '../data/UsersData';
+import SectionTitle from "./SectionTitle";
+import Testimonial from "./Testimonial";
+import { users } from "../data/UsersData";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -12,13 +12,12 @@ import "./Comments.css";
 import { Navigation } from "swiper";
 
 const Comment = () => {
-  const usersData=users;
- 
-  
+  const usersData = users;
+
   return (
     <>
-      <SectionTitle title={'نظرات کاربران'} />
-      
+      <SectionTitle title={"نظرات کاربران"} />
+
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -44,21 +43,16 @@ const Comment = () => {
         modules={[Navigation]}
         className="mySwiper"
       >
-
         {usersData.map((user) => {
-                return (
-                  <SwiperSlide key={user.id}>
-                    <Testimonial list={user} />
-                  </SwiperSlide>
-                );
-              })}
-              
+          return (
+            <SwiperSlide key={user.id}>
+              <Testimonial list={user} />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );
 };
 
 export default Comment;
-
-
-

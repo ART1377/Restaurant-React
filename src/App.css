@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&family=El+Messiri:wght@400;500;600;700&family=Mochiy+Pop+One&family=Poppins:wght@300;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&family=El+Messiri:wght@400;500;600;700&family=Mochiy+Pop+One&family=Poppins:wght@300;500;600;700;800&display=swap");
 
 :root {
   /* Color styles */
@@ -64,19 +64,23 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'El Messiri';
+  font-family: "El Messiri";
 }
-a{
-  cursor: pointer!important;
+a {
+  cursor: pointer !important;
 }
 img {
   width: 100%;
   height: 100%;
 }
-body{
-  background-color: var(--gray--200)!important;
-  position: relative!important;
-/*   min-height: 125vh!important; */
+body {
+  background-color: var(--gray--200) !important;
+}
+html,
+body,
+#root {
+  height: 100% !important;
+  min-height: 100% !important;
 }
 
 
@@ -95,7 +99,7 @@ body{
   position: relative;
 }
 .offcanvas .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 50%;
   bottom: 0;
@@ -105,9 +109,10 @@ body{
   transition: var(--transition);
 }
 .offcanvas .nav-link {
-transition: var(--transition);}
+  transition: var(--transition);
+}
 .offcanvas .nav-link:hover {
- padding-right: 8px;
+  padding-right: 8px;
 }
 .offcanvas:not(.show) .nav-link:hover::after {
   width: 100%;
@@ -141,6 +146,5 @@ transition: var(--transition);}
   padding: 1.3rem;
   border-radius: 0.4rem;
 }
-
 
 /* ********* navbar end ********* */

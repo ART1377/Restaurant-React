@@ -3,6 +3,11 @@
 }
 
 @media only screen and (min-width: 1400px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .hero-title {
     font-size: 56px !important;
   }
@@ -23,7 +28,7 @@
 }
 @media only screen and (max-width: 800px) {
   .smile-text {
-    font-size: 32px!important;
+    font-size: 32px !important;
   }
   .hero-image {
     width: 100%;
@@ -35,13 +40,80 @@
   }
   .hero-text {
     font-size: var(--body-2) !important;
+    width: 75% !important;
   }
 }
+
 @media only screen and (max-width: 576px) {
+  .hero-image {
+    background: url(../assets/image/HeroImageLg.png) no-repeat center
+      center/contain;
+    padding-top: 0;
+  }
+  .main-conteiner {
+    height: 100vh;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-height: 700px;
+  }
+
+  .hero-title {
+    font-size: 24px !important;
+  }
+  .hero-text {
+    font-size: var(--body-3) !important;
+    width: 90% !important;
+    margin: auto;
+  }
+  .smile-text {
+    padding: 0 5px;
+  }
+  .hero-row {
+    display: flex;
+    justify-content: start;
+    flex-direction: column-reverse;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    max-height: 700px;
+  }
+  .hero-image {
+    height: 50%;
+  }
+  .hero-content {
+    text-align: center;
+    height: 40%;
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .hero-icons {
+    justify-content: center;
+  }
+  /*
+  .hero-icons *{
+    display: none!important;
+  } */
+  .hero-button {
+    justify-content: center;
+  }
+  /* .hero-row div {
+    height: 50% !important;
+  } */
+  /* .main-conteiner .hero-row div:first-child {
+    background-color: blue;
+  } */
+}
+
+/* @media only screen and (max-width: 576px) {
   .hero-row {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url(../assets/image/HeroImageLg.png) no-repeat center center/cover;
   }
+  .main-conteiner {
+    height: 100vh;
+  }
+  
   .hero-title {
     color: var(--gray--100);
     font-size: 24px !important;
@@ -53,4 +125,5 @@
   .smile-text {
     padding: 0 5px;
   }
-}
+
+}  */

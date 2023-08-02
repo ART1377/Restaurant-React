@@ -15,14 +15,14 @@ const CommonQuestion = () => {
           </p>
         </div>
         <div className={`row ${css['row-accordion']}`}>
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
+          <div className="accordion accordion-flush" id="accordionFlushExample">
+            <div className="accordion-item">
               <h2
-                class={`accordion-header ${css['header']}`}
+                className={`accordion-header ${css['header']}`}
                 id="flush-headingOne"
               >
                 <button
-                  class={`accordion-button text-end collapsed ${css['arrow']}`}
+                  className={`accordion-button text-end collapsed ${css['arrow']}`}
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne"
@@ -34,11 +34,11 @@ const CommonQuestion = () => {
               </h2>
               <div
                 id="flush-collapseOne"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 aria-labelledby="flush-headingOne"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body text-end">
+                <div className="accordion-body text-end">
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
@@ -48,13 +48,13 @@ const CommonQuestion = () => {
               </div>
             </div>
             <div className={`${css['line']}`}></div>
-            <div class="accordion-item">
+            <div className="accordion-item">
               <h2
-                class={`accordion-header ${css['header']}`}
+                className={`accordion-header ${css['header']}`}
                 id="flush-headingTwo"
               >
                 <button
-                  class={`accordion-button text-end collapsed ${css['arrow']}`}
+                  className={`accordion-button text-end collapsed ${css['arrow']}`}
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseTwo"
@@ -66,11 +66,11 @@ const CommonQuestion = () => {
               </h2>
               <div
                 id="flush-collapseTwo"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 aria-labelledby="flush-headingTwo"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body text-end">
+                <div className="accordion-body text-end">
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
@@ -80,13 +80,13 @@ const CommonQuestion = () => {
               </div>
             </div>
             <div className={`${css['line']}`}></div>
-            <div class="accordion-item">
+            <div className="accordion-item">
               <h2
-                class={`accordion-header ${css['header']}`}
+                className={`accordion-header ${css['header']}`}
                 id="flush-headingThree"
               >
                 <button
-                  class={`accordion-button text-end collapsed ${css['arrow']}`}
+                  className={`accordion-button text-end collapsed ${css['arrow']}`}
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseThree"
@@ -98,11 +98,11 @@ const CommonQuestion = () => {
               </h2>
               <div
                 id="flush-collapseThree"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 aria-labelledby="flush-headingThree"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body text-end">
+                <div className="accordion-body text-end">
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
@@ -112,13 +112,13 @@ const CommonQuestion = () => {
               </div>
             </div>
             <div className={`${css['line']}`}></div>
-            <div class="accordion-item">
+            <div className="accordion-item">
               <h2
-                class={`accordion-header ${css['header']}`}
+                className={`accordion-header ${css['header']}`}
                 id="flush-headingFour"
               >
                 <button
-                  class={`accordion-button text-end collapsed ${css['arrow']}`}
+                  className={`accordion-button text-end collapsed ${css['arrow']}`}
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFour"
@@ -130,11 +130,11 @@ const CommonQuestion = () => {
               </h2>
               <div
                 id="flush-collapseFour"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 aria-labelledby="flush-headingFour"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body text-end">
+                <div className="accordion-body text-end">
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
@@ -144,13 +144,13 @@ const CommonQuestion = () => {
               </div>
             </div>
             <div className={`${css['line']}`}></div>
-            <div class="accordion-item">
+            <div className="accordion-item">
               <h2
-                class={`accordion-header ${css['header']}`}
+                className={`accordion-header ${css['header']}`}
                 id="flush-headingFive"
               >
                 <button
-                  class={`accordion-button text-end collapsed ${css['arrow']}`}
+                  className={`accordion-button text-end collapsed ${css['arrow']}`}
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFive"
@@ -163,11 +163,11 @@ const CommonQuestion = () => {
               </h2>
               <div
                 id="flush-collapseFive"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 aria-labelledby="flush-headingFive"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body text-end">
+                <div className="accordion-body text-end">
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی

@@ -1,11 +1,12 @@
 import React from 'react';
 import css from './ContactUs.module.css';
+import { Link } from "react-router-dom";
 import {
-  FaTwitter,
-  FaTelegramPlane,
-  FaInstagram,
-  FaPhone,
   FaEnvelope,
+  FaTelegramPlane,
+  FaGithub,
+  FaPhone,
+  
   FaMapMarkerAlt,
   FaUserAlt,
   FaEnvelopeOpenText,
@@ -86,7 +87,7 @@ const ContactUs = () => {
         </div>
         <div className={`row mx-auto px-3 py-5 ${css['row']}`}>
           <div className={`col-12 col-md-7 p-4 ${css['form-container']}`}>
-            <h3>پیام خود را به ما ارسال کنید</h3>
+            <h5 className='mb-5'>پیام خود را به ما ارسال کنید</h5>
             <form onSubmit={formik.handleSubmit}>
               <div className="d-flex row mb-5">
                 <div
@@ -96,7 +97,7 @@ const ContactUs = () => {
                       : ''
                   }`}
                 >
-                  <label htmlFor="firstName">
+                  <label className='small' htmlFor="firstName">
                     <FaUserAlt /> نام
                   </label>
                   <input
@@ -116,7 +117,7 @@ const ContactUs = () => {
                       : ''
                   }`}
                 >
-                  <label htmlFor="lastName">
+                  <label className='small' htmlFor="lastName">
                     <FaUserAlt /> نام خانوادگی
                   </label>
                   <input
@@ -138,7 +139,7 @@ const ContactUs = () => {
                 }`}
               >
                 {' '}
-                <label htmlFor="email">
+                <label className='small' htmlFor="email">
                   <FaEnvelope /> ایمیل
                 </label>
                 <input
@@ -159,7 +160,7 @@ const ContactUs = () => {
                 }`}
               >
                 {' '}
-                <label htmlFor="textarea">
+                <label className='small' htmlFor="textarea">
                   <FaEnvelopeOpenText /> متن خود را وارد کنید
                 </label>
                 <textarea
@@ -197,7 +198,7 @@ const ContactUs = () => {
             <h3 className="mb-5">تماس با ما</h3>
             <div className="d-flex py-2">
               <FaPhone />
-              <p className="px-3">021-3315</p>
+              <p className="px-3">09193050762</p>
             </div>
             <div className="d-flex py-2">
               <FaEnvelope />
@@ -213,9 +214,15 @@ const ContactUs = () => {
             <div className="mt-4">
               <h4>ما را دنبال کنید</h4>
               <div className={` ${css['social']}`}>
-                <FaTwitter />
-                <FaTelegramPlane />
-                <FaInstagram />
+              <Link to={`https://github.com/ART1377`} replace={true}>
+                  <FaGithub />
+                </Link>
+                <Link to={`https://t.me/ART_1377`} replace={true}>
+                  <FaTelegramPlane />
+                </Link>
+                <a href="mailto:insertemailhere@xyz.com">
+                  <FaEnvelope />
+                </a>
               </div>
             </div>
           </div>

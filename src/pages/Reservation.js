@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import css from './Reservation.module.css';
 import {
   FaPhone,
@@ -158,7 +158,7 @@ const Reservation = () => {
                       : ''
                   }`}
                 >
-                  <label htmlFor="firstName">
+                  <label className='small' htmlFor="firstName">
                     <FaUserAlt /> نام
                   </label>
                   <input
@@ -177,7 +177,7 @@ const Reservation = () => {
                       : ''
                   }`}
                 >
-                  <label htmlFor="lastName">
+                  <label className='small' htmlFor="lastName">
                     <FaUserAlt /> نام خانوادگی
                   </label>
                   <input
@@ -198,7 +198,7 @@ const Reservation = () => {
                 }`}
               >
                 {' '}
-                <label htmlFor="branch">
+                <label className='small' htmlFor="branch">
                   <FaBuilding /> نام شعبه
                 </label>
                 <select
@@ -227,7 +227,7 @@ const Reservation = () => {
                 }`}
               >
                 {' '}
-                <label htmlFor="phoneNumber">
+                <label className='small' htmlFor="phoneNumber">
                   <FaPhone /> شماره تلفن
                 </label>
                 <input
@@ -248,7 +248,7 @@ const Reservation = () => {
                       : ''
                   }`}
                 >
-                  <label htmlFor="guest">
+                  <label className='small' htmlFor="guest">
                     <FaUserFriends /> تعداد مهمان
                   </label>
                   <input
@@ -267,7 +267,7 @@ const Reservation = () => {
                       : ''
                   }`}
                 >
-                  <label htmlFor="date">
+                  <label className='small' htmlFor="date">
                     <FaCalendarAlt /> تاریخ
                   </label>
                   <input

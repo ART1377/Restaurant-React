@@ -28,11 +28,11 @@
 .row {
   background-color: var(--gray--700);
   width: 85% !important;
-/*   position: absolute;
+  /*   position: absolute;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%); */
-  margin-top: -10%!important;
+  margin-top: -10% !important;
 }
 .info-container {
   color: var(--gray--100);
@@ -42,14 +42,18 @@
 }
 .social svg {
   font-size: 40px !important;
-;
+  color: var(--gray--100);
   border-radius: 100%;
   padding: 8px;
   margin-left: 16px;
   transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .social svg:hover {
-  border: 1px solid  var(--primary--main);
+  border: 1px solid var(--primary--main);
   color: var(--primary--main);
 }
 .form-container {
@@ -57,7 +61,7 @@
   position: relative;
 }
 .form-container::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 250px;
@@ -66,7 +70,7 @@
   top: 20%;
 }
 .form-container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 250px;
@@ -78,7 +82,6 @@
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid var(--gray--900);
-
 }
 .form-container textarea {
   border: 1px solid var(--gray--900);

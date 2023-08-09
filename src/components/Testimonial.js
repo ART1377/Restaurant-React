@@ -11,7 +11,7 @@ const Testimonial = ({list}) => {
   return (
     <>
         <div className={`p-3 ${css['card']}`}>
-            <div className={`row ${css['card-row']}`}>
+            <div className={`row position-relative ${css['card-row']}`}>
                 <div className={`col-4 d-flex justify-content-center align-items-center p-3 ${css['right']}`}>
                     <div className={`d-flex justify-content-center align-items-center ${css['shape']}`}>
                         <img className={` ${css['image']}`} src={list.image} alt="userImage" />
